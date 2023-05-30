@@ -35,33 +35,31 @@
             </div>
             <div class="search-form-and-image">
                 <div class="search-form">
-                    <h1>Let's Enjoy Your <br />Trip In San Francisco.</h1>
+                    <h1>Let's Enjoy Your <br />Trip In Chernivtsi.</h1>
                     <form>
-                        <label for="city">
-                            <!-- <input list="city" class="destination-selector" placeholder="Destination" />
-                            <datalist id="city">
-                                <option value="Kyiv">Kyiv</option>
-                                <option value="Chernihiv">Chernihiv</option>
-                                <option value="Lviv">Lviv</option>
-                                <option value="Odesa">Odesa</option>
-                                <option value="Yaremvhe">Yaremvhe</option>
-                                <option value="Chernivci">Chernivci</option>
-                                <option value="Yalta" disabled>Yalta</option>  
-                            </datalist> -->
-
-                        <select name="city" id="city" placeholder="Destination">
-                            <option value="Kyiv">Kyiv</option>
-                            <option value="Chernihiv">Chernihiv</option>
-                            <option value="Lviv">Lviv</option>
-                            <option value="Odesa">Odesa</option>
-                            <option value="Yaremvhe">Yaremvhe</option>
-                            <option value="Chernivci">Chernivci</option>
-                            <option value="Yalta" disabled>Yalta</option>
-                        </select>
-                        </label>
-                        <input type="date" id="date-change " name="date">
-                        <input placeholder="# of people">
-                        <input type="checkbox">
+                        <div class="travel-info">
+                            <label for="city">
+                                <select name="city" id="city">
+                                    <option value="" disabled selected hidden>Destination</option>
+                                    <option value="Kyiv">Kyiv</option>
+                                    <option value="Chernihiv">Chernihiv</option>
+                                    <option value="Lviv">Lviv</option>
+                                    <option value="Odesa">Odesa</option>
+                                    <option value="Yaremvhe">Yaremvhe</option>
+                                    <option value="Chernivci">Chernivci</option>
+                                    <option value="Yalta" disabled>Yalta</option>
+                                </select>
+                            </label>
+                            <input type="date" id="date-change" name="date">
+                            <input class="people-quantity" placeholder="# of people">
+                        </div>
+                        <div class="search-block">
+                            <button class="search-button">Search</button>
+                            <label class="save-search">
+                                <input type="checkbox" />
+                                Save this search
+                            </label>
+                        </div>
                     </form>
                 </div>
                 <div class="city-images">

@@ -10,7 +10,6 @@
  }
 
 .inner-wrapper {
-    /* background-color: lightcoral; */
     margin: 0 auto;
     max-width: 1110px;
 }
@@ -22,7 +21,7 @@
 
 header {
     padding-top: 20px;
-    height: ;
+    min-height: 550px;
 }
 
 .brand-and-nav {
@@ -44,7 +43,6 @@ header {
 
 header nav ul {
     display: flex;
-
 }
 
 header nav ul li {
@@ -53,7 +51,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #c5c5b5;
+    color: #d3e7f7;
     text-decoration: none;
     font-size: 14px;
     font-family: "Inter", sans-serif;
@@ -66,21 +64,93 @@ header nav ul li a:hover {
 header .search-form-and-image{
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
     justify-content: space-between;
 }
 
 header .search-form {
     display: flex;
     flex-direction: column;
-  
+  }
+
+header .search-form form {
+    background-color: white;
+    height: 171px;
+    width: 635px;
+    border-radius: 10px;
+    padding: 30px;
+    z-index: 2;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.travel-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .search-form form select {
+    width: 171px;
+    height: 45px;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #495057;
+    border: 2px solid #e9ecef;
+    border-radius: 4px;
+}
+#date-change {
+    width: 222px;
+    height: 45px;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #495057;
+    border: 2px solid #e9ecef;
+    border-radius: 4px;
+}
+
+.people-quantity {
+    width: 121px;
+    height: 45px;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #495057;
+    border: 2px solid #e9ecef;
+    border-radius: 4px;
+}
+
+.search-block {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-button {
+    width: 171px;
+    height: 47px;
+    color: white;
+    background: #1A374D;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.save-search {
+    font-size: 16px;
+    font-weight: 400px;
+    color: #212529;
+    padding: 12px 30px;
+
 }
 
 header .city-images {
     border-radius: 50px;
     overflow: hidden;
-    width: 480px;
-    height: 320px;
-
+    width: 580px;
+    height: 384px;
+    transform: translate(-20px, 30px);
 }
 
 h1 {
@@ -89,5 +159,4 @@ h1 {
     font-family: "sorce Serif Pro", serif;
     margin: 0px 0px 48px;
     font-weight: 500;
-    padding-top: ;
 }
