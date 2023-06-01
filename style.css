@@ -209,3 +209,95 @@ h1 {
     font-family: "Inter", sans-serif;
 }
 
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    height: 465px;
+    margin-top: 80px;
+}
+
+.city-images-promo {
+    border-radius: 30px;
+    height: 462px;
+    width: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.main-servisec{
+    /* display: flex;
+    flex-wrap: wrap; */
+    column-count: 2;
+    column-gap: 0;
+    /* height: 465px;
+    width: 742px; */
+}
+
+.favor {
+    height: 225px;
+    width: 356px;
+    background-color: #eaf0f3;
+    border-radius: 40px;
+    padding: 30px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 0px;
+    display: flex;
+    flex-flow: column;
+    line-height: 1.7;
+    justify-content: center;
+}
+
+.mini-img {
+    height: 50px;
+    width: 50px; 
+}
+
+.favor h3 {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.pop-destination {
+    height: 611px;
+    width: 1110px;
+    margin-top: 80px;
+    position: relative;
+}
+.pop-destination h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: rgb(33, 37, 41);
+    text-align: center;
+}
+.pop-destination h2::before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    background-color: #1A374D;
+    transform: translateX(-50%);
+}
+
+.slider {
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-item {
+    border-radius: 30px;
+    min-height: 400px;
+    width: 300px;
+    display: inline-block;
+    padding: 14px;
+    margin-left: 20px;
+    text-decoration: none;
+}
