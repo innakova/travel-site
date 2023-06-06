@@ -286,6 +286,7 @@ h1 {
 
 .container {
     padding: 2rem;
+    position: relative;
 }
 
 .slider-wrapper {
@@ -296,7 +297,7 @@ h1 {
  
 .slider {
     display: flex;
-    aspect-ratio: 16 /9;
+    aspect-ratio: 16/9;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -307,7 +308,8 @@ h1 {
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: cover; 
+    object-fit: cover;
+    box-shadow: 5px 5px 20px black; 
 }
 
 .slider-nav {
@@ -332,21 +334,62 @@ h1 {
 .slider-nav a:hover {
     opacity: 1;
 }
-  
-/* .slider {
-    overflow: auto;
-    white-space: nowrap;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
+
+.slider:hover {
+    cursor: pointer;
 }
 
-.slider-item {
-    border-radius: 30px;
-    min-height: 400px;
-    width: 300px;
-    display: inline-block;
-    padding: 14px;
-    margin-left: 20px;
-    text-decoration: none;
-} */
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.card h3 {
+    position: absolute;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.intro {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  
+    opacity: 0;
+    transition: 5s, ease;
+}
+.intro p {
+    color: white;
+    margin: 70px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    z-index: 2;
+}
+
+.slider-wrapper:hover {
+    height: 100%;
+    opacity: 1;   
+}
+
+.slider-wrapper:hover .intro {
+    height: 100%;
+    opacity: 1;   
+}
+
+.slider-wrapper:hover h3 {
+    color: white;
+    z-index: 2;
+}
