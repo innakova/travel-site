@@ -305,11 +305,36 @@ h1 {
     border-radius:  0.5rem;
 }
 
-.slider img {
+.slider .card {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
-    box-shadow: 5px 5px 20px black; 
+    box-shadow: 5px 5px 20px black;
+    background-position: center;
+}
+
+.card-pamir {
+    background-image: url('./images/pamir.jpg');
+}
+
+.card-radonove-ozero {
+    background-image: url('./images/padonove_ozero.jpg');
+}
+
+.card-synevir {
+    background-image: url('./images/shenborn.jpeg');
+}
+
+.card-synevir2 {
+    background-image: url('./images/snevyr.jpg');
+}
+
+.card-zamok-radomishl {
+    background-image: url('./images/Zamok-Radomyshl.jpg');
+}
+
+.card-sofiyivka {
+    background-image: url('./images/Sofiyivka.jpg');
 }
 
 .slider-nav {
@@ -350,6 +375,11 @@ h1 {
     font-size: 25px;
     margin-top: 25px;
 }
+
+/* .card img {
+    display: flex;
+    justify-content: center;
+}  */
 
 .intro {
     position: absolute;
