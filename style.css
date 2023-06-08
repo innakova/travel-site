@@ -238,7 +238,7 @@ h1 {
 .favor {
     height: 225px;
     width: 356px;
-    background-color: #eaf0f3;
+    background-color:rgb(26 54 75 / 5%);
     border-radius: 40px;
     padding: 30px;
     margin-bottom: 15px;
@@ -298,7 +298,7 @@ h1 {
 .slider {
     display: flex;
     aspect-ratio: 16/9;
-    overflow-x: hidden;
+    overflow: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.2rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); 
@@ -307,10 +307,14 @@ h1 {
 
 .slider .card {
     flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-    box-shadow: 5px 5px 20px black;
+    scroll-snap-align: center;
     background-position: center;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    transition: transform 0.3s ease;
 }
 
 .card-pamir {
@@ -321,11 +325,11 @@ h1 {
     background-image: url('./images/padonove_ozero.jpg');
 }
 
-.card-synevir {
+.card-shenborn {
     background-image: url('./images/shenborn.jpeg');
 }
 
-.card-synevir2 {
+.card-synevir {
     background-image: url('./images/snevyr.jpg');
 }
 
@@ -337,17 +341,31 @@ h1 {
     background-image: url('./images/Sofiyivka.jpg');
 }
 
+.card-pamir:hover, .card-radonove-ozero:hover, .card-shenborn:hover, .card-synevir:hover, .card-zamok-radomishl:hover, .card-sofiyivka:hover {
+    transform: scale(1.1);
+}
+
+
 .slider-nav {
     display: flex;
-    column-gap: 1rem;
     position: absolute;
-    bottom: 1.25rem;
+    bottom: -0.75rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
 }
 
-.slider-nav a {
+.slider-nav a{
+    background-color: transparent;
+    width: 1.5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slider-nav a .circle{
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
@@ -356,30 +374,19 @@ h1 {
     transition: opacity ease 250ms;
 }
 
-.slider-nav a:hover {
+.slider-nav a .circle:hover {
     opacity: 1;
+    
 }
 
 .slider:hover {
     cursor: pointer;
 }
 
-.card {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
 .card h3 {
-    position: absolute;
-    font-size: 25px;
-    margin-top: 25px;
+    
+    display: none;
 }
-
-/* .card img {
-    display: flex;
-    justify-content: center;
-}  */
 
 .intro {
     position: absolute;
@@ -390,13 +397,10 @@ h1 {
     right: 0;
     background: rgba(0, 0, 0, 0.6);
     overflow: hidden;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-  
     opacity: 0;
     transition: 5s, ease;
 }
@@ -405,21 +409,27 @@ h1 {
     margin: 70px;
     padding: 10px;
     font-size: 25px;
+    line-height: 35px;
     text-align: center;
     z-index: 2;
 }
 
 .slider-wrapper:hover {
     height: 100%;
-    opacity: 1;   
+    opacity: 1;
 }
 
 .slider-wrapper:hover .intro {
     height: 100%;
-    opacity: 1;   
+    opacity: 1;
+    transition: 0.3s; 
 }
 
 .slider-wrapper:hover h3 {
+    display: block;
+    position: absolute;
+    font-size: 40px;
+    margin-top: 50px;
     color: white;
     z-index: 2;
 }
