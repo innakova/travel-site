@@ -9,6 +9,13 @@
     font-family: "sorce Serif Pro", serif;
  }
 
+ h2 {
+    font-size: 32px;
+    color: #212529;
+    font-family: "Source Serif Pro", serif;
+    font-weight: 500;
+}
+
 .inner-wrapper {
     margin: 0 auto;
     max-width: 1110px;
@@ -588,4 +595,52 @@ h1 {
 
 .slider-response:hover {
     cursor: pointer;
+}
+
+.discount-title {
+    text-align: center;
+    max-width: 50%;
+    padding: 0 15px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.size14 {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #212529;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.discounts-and-offers {
+    padding: 70px;
+}
+
+.discount-title h2 {
+    line-height: 1.2;
+    margin: 0 0 16px;
+    padding: 0 0 20px;
+}
+
+.discont-directions {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    
+}
+
+.promo-img {
+    height: 287px;
+    width: 210px;
+}
+
+.mini-pin {
+    height: 20px;
+    width: 15px;
 }
