@@ -596,6 +596,11 @@ h1 {
 .slider-response:hover {
     cursor: pointer;
 }
+/*Special Offers & Discounts*/
+
+.discounts-and-offers {
+    padding: 70px;
+}
 
 .discount-title {
     text-align: center;
@@ -617,9 +622,6 @@ h1 {
     line-height: 1.5;
 }
 
-.discounts-and-offers {
-    padding: 70px;
-}
 
 .discount-title h2 {
     line-height: 1.2;
@@ -631,16 +633,91 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    
+}
+.media1 {
+    padding: 0 15px;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+.route {
+    width: 210px;
+    height: 21px;
+}
+
+.route span {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #212529;
 }
 
 .promo-img {
     height: 287px;
     width: 210px;
+    border-radius: 20px;
 }
 
 .mini-pin {
     height: 20px;
     width: 15px;
+    margin-right: 10px;
+}
+
+.attraction-name {
+    font-size: 20px;
+    color: #000000;
+    font-family: "Source Serif Pro", serif;
+}
+
+.price {
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    color: #1A374D;
+    font-weight: 700;
+}
+
+/*Take a look at Tour Video*/
+
+.tour-video-title {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+    
+}
+
+.promo-video iframe {
+    height: 615px;
+    width: 460px;
+}
+
+.tour-info {
+    margin: 50px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+     display: flex;
+}
+
+.tour-info ul {
+    column-count: 2;
+    column-gap: 0;
+    display: list-item;
+    margin: 0 0 50px 20px;
+    list-style: circle;
+   
+   
+}
+
+.tour-info button {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 14px;
+    background: #1A374D;
+    border-color: #1A374D;
+    color: #fff;
+    text-align: center;
+}
+.button {
+    display: flex;
+    justify-content: center;
 }
