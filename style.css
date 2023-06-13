@@ -20,11 +20,24 @@
     margin: 0 auto;
     max-width: 1110px;
     position:relative;
+    
 }
 
 .external-wrapper {
     background-color: #6998AB;
     width: 100%;
+}
+
+.external-wrapper-white {
+    background-color: white;
+}
+
+.external-wrapper-grey {
+    background-color: #f8f9fa;
+}
+
+.external-wrapper-blue {
+    background-color: #1A374D;
 }
 
 header {
@@ -174,13 +187,7 @@ h1 {
     font-weight: 500;
 }
 
-.external-wrapper-white {
-    background-color: white;
-}
 
-.external-wrapper-grey {
-    background-color: #f8f9fa;
-}
 
 .services-header {
     display: flex;
@@ -703,8 +710,6 @@ h1 {
     display: list-item;
     margin: 0 0 50px 20px;
     list-style: circle;
-   
-   
 }
 
 .tour-info button {
@@ -717,7 +722,99 @@ h1 {
     color: #fff;
     text-align: center;
 }
-.button {
+.button-start {
     display: flex;
     justify-content: center;
 }
+
+button:hover {
+    cursor: pointer;
+    background-color: #2c4152;
+}
+
+
+/*Footer*/
+
+.inner-wrapper-footer {
+    margin: 0 auto;
+    max-width: 1110px;
+    position:relative;
+    padding: 48px 0;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-title h2 {
+    margin-bottom: 8px;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: "Source Serif Pro", serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer-title p {
+    margin-bottom: 24px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    opacity: .7;
+
+}
+
+button.touch {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 14px;
+    background: #1A374D;
+    border-color: #b0cadd;
+    border: 2px solid #ffffff;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+button.touch:hover {
+    cursor: pointer;
+    background-color: #d3e7f7;
+    color: #1A374D;
+}
+
+.footer-contacts-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-tour {
+    max-width: 35%;
+}
+
+a .social-icon {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(1);
+    margin-right: 5px
+
+}
+
+
+.icon-line {
+    list-style: none;
+    display: flex;
+    
+}
+
+.contact-item img {
+    width: 15px;
+    height: 15px;
+}
+
+
+
