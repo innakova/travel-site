@@ -176,7 +176,7 @@ header .city-images {
     overflow: hidden;
     width: 580px;
     height: 384px;
-    transform: translate(-20px, 30px);
+    transform: translate(-25px, 9px);
 }
 
 h1 {
@@ -218,16 +218,15 @@ h1 {
 }
 
 .services-header p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    width: 540px;
+    width: 570px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
     font-family: "Inter", sans-serif;
 }
-
 
 .services {
     display: flex;
@@ -246,12 +245,8 @@ h1 {
 }
 
 .main-servisec{
-    /* display: flex;
-    flex-wrap: wrap; */
     column-count: 2;
     column-gap: 0;
-    /* height: 465px;
-    width: 742px; */
 }
 
 .favor {
@@ -272,14 +267,17 @@ h1 {
 }
 
 .mini-img {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     filter: contrast(0.55); 
+    margin-bottom: 10px;
+    
 }
 
 .favor h3 {
     font-size: 19px;
     font-weight: 700;
+    font-family: "Source Serif Pro", serif;
 }
 
 .favor p {
@@ -300,17 +298,6 @@ h1 {
     color: rgb(33, 37, 41);
     text-align: center;
 }
-/* .pop-destination h2::before {
-    display: block;
-    content: "";
-    width: 30px;
-    height: 2px;
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    background-color: #1A374D;
-    transform: translateX(-50%);
-} */
 
 .counter-line {
     display: flex;
@@ -438,7 +425,6 @@ h1 {
 }
 
 .card h3 {
-    
     display: none;
 }
 
@@ -460,10 +446,9 @@ h1 {
 }
 .intro p {
     color: white;
-    margin: 70px;
-    padding: 10px;
+    margin: 60px 60px 30px 60px;
     font-size: 25px;
-    line-height: 35px;
+    line-height: 1.25;
     text-align: center;
     z-index: 2;
 }
@@ -483,7 +468,7 @@ h1 {
     display: block;
     position: absolute;
     font-size: 40px;
-    margin-top: 50px;
+    margin: 50px 0 20px 0;
     color: white;
     z-index: 2;
 }
@@ -603,6 +588,7 @@ h1 {
 .slider-response:hover {
     cursor: pointer;
 }
+
 /*Special Offers & Discounts*/
 
 .discounts-and-offers {
@@ -620,8 +606,8 @@ h1 {
     margin-bottom: 3rem;
 }
 
-.size14 {
-    font-size: 14px;
+.size15 {
+    font-size: 15px;
     font-family: "Inter", sans-serif;
     color: #212529;
     margin-top: 0;
@@ -673,7 +659,7 @@ background-image: url('./images/husky.jfif');
 }
 
 .promo-img2 {
-    background-image: url('./images/alpaca.jfif');
+    background-image: url('./images/buffalo.jpg');
 }
 
 .promo-img3 {
@@ -681,7 +667,7 @@ background-image: url('./images/husky.jfif');
 }
 
 .promo-img4 {
-    background-image: url('./images/sheep.jpg');
+    background-image: url('./images/deer.jpg');
 }
 
 
