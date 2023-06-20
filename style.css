@@ -233,29 +233,37 @@ h1 {
     display: flex;
     justify-content: space-between;
     /* flex-wrap: wrap; */
-    height: 465px;
+    /* height: 465px; */
     margin-top: 80px;
 }
 
 .city-images-promo {
     border-radius: 30px;
     height: 462px;
-    width: 350px;
+    /* width: 350px; */
+    max-width: 30%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex: 0 0 33%;
 }
 
-.main-servisec{
-    column-count: 2;
-    column-gap: 0;
+.main-services{
+    /* column-count: 2;
+    column-gap: 0; */
+    display: flex;
+    flex: 0 0 67%;
+    max-width: 67%;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     
 }
 
 .favor {
     font-family: "Inter", sans-serif;
-    height: 225px;
+    /* height: 225px; */
     width: 356px;
+    max-width: 47%;
     background-color:rgb(26 54 75 / 5%);
     border-radius: 20px;
     padding: 30px;
@@ -264,7 +272,7 @@ h1 {
     margin-right: 0px;
     display: flex;
     flex-flow: column;
-    line-height: 1.7;
+    line-height: 1.5;
     justify-content: center;
     color: #212529;
 }
@@ -705,6 +713,7 @@ background-image: url('./images/husky.jfif');
     display: flex;
     flex-direction: row;
     margin: 30px 0;
+    flex-wrap: wrap;
     
 }
 
@@ -716,7 +725,7 @@ background-image: url('./images/husky.jfif');
 
 .tour-info {
     margin: 50px;
-    max-width: 50%;
+    max-width: 45%;
     display: flex;
     flex-direction: column;
      display: flex;
@@ -913,6 +922,134 @@ a .social-icon {
         width: 320px;
     }
     .city-images-promo {
-        width: 100%;
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 826px) and (max-width: 991px) {
+    h1 {
+        font-size:55px;
+    }
+    .travel-info{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .search-form form{
+        max-width: 521px;
+        min-height: 247px;
+    }
+
+    #date-change {
+        width: 225px;
+        margin: 13px 0;
+    }
+
+    .people-quantity {
+        width: 225px;
+        margin: 13px 0;
+    }
+
+    #city {
+        width: 461px;
+    }
+
+    .search-block {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 825px) {
+    h1 {
+        font-size: 35px;
+    }
+    
+    .search-form form{
+        max-width: 360px;
+        min-height: 293px;
+        max-height: 357px;
+    }
+    
+    .travel-info {
+        max-width: fit-content;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #date-change {
+        margin: 13px 0;
+    }
+
+  
+    /*Services*/
+
+    .city-images-promo {
+        min-width: 316px;
+        max-width: 450px;
+        max-height: 795px;
+        min-height: 795px;
+        align-items: center;
+       
+    }
+    .main-services {
+        max-width: 55%;
+    }
+
+    .services{
+        align-items: center;
+    }
+
+    .favor {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-services {
+        max-width: 55%;
+    }
+    .city-images-promo{
+        max-width: 50%;
+        min-width: 45%;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .city-images {
+        display: none;
+    }
+    .search-form {
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .city-images-promo {
+        max-width: 86%;
+        max-height: 500px;
+        min-height: 419px;
+        justify-content: center;
+    }
+
+    .favor {
+        margin: 10px;
+        min-width: 369px;
+        max-width: fit-content;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-services {
+        justify-content: center;
+    }
+
+    .favor{
+        margin: 10px;
+        min-width: 400px;
+        max-width: fit-content;
     }
 }
