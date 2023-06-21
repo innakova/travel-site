@@ -83,6 +83,132 @@ header nav ul li a:hover {
     color: white;
 }
 
+
+
+
+/*Hamburger menu*/
+
+/* .nav-hamb-menu{
+    display: flex;
+    flex-direction: column; 
+    background-color: transparent;
+} */
+
+/* Nav menu */
+
+.nav{
+    /* width: 50%; */
+    /* height: 100%; */
+    /* position: fixed; */
+    /* background-color: white; */
+    overflow: hidden;
+
+}
+.menu a{
+    display: block;
+    padding: 5px;
+    color: black;
+}
+.menu a:hover{
+    background-color: gray;
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    /* float: right; */
+    padding: 34px 20px;
+    width: fit-content;
+    z-index: 2;
+    display: flex;
+    justify-content: end;
+}/* Style label tag */
+
+.hamb-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    background-color: black;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+    background-color: black;
+}
+.hamb-line::after{
+    top: -5px;
+    background-color: black;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 50%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+/* Responsiveness */
+@media (min-width: 560px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+    }
+
+    .hamb{
+        display: none;
+    }
+}
+
+/*The End of hamburger menu*/
+
+
+
+
+
+
+
+
+
 header .search-form-and-image{
     display: flex;
     flex-direction: row;
@@ -783,6 +909,7 @@ button:hover {
     font-family: "Source Serif Pro", serif;
     font-weight: 500;
     line-height: 1.5;
+    text-align: center;
 }
 
 .footer-title p {
@@ -792,6 +919,7 @@ button:hover {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     opacity: .7;
+    text-align: center;
 
 }
 
@@ -924,6 +1052,24 @@ a .social-icon {
     .city-images-promo {
         max-width: 40%;
     }
+    .tour-video-title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promo-video {
+        min-width: 900px;
+        
+    }
+
+    .promo-video iframe {
+        min-width: 900px;
+        max-height: 500px;
+        
+    }
+    .tour-info {
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 826px) and (max-width: 991px) {
@@ -956,6 +1102,23 @@ a .social-icon {
     .search-block {
         justify-content: center;
     }
+    
+    .tour-video-title {
+        justify-content: center;
+    }
+
+    .promo-video {
+        min-width: 700px;
+    }
+
+    .promo-video iframe {
+        min-width: 770px;
+        max-height: 447px;
+    }
+
+    .tour-info {
+        max-width: 100%;
+    }
 
 }
 
@@ -978,7 +1141,6 @@ a .social-icon {
     #date-change {
         margin: 13px 0;
     }
-
   
     /*Services*/
 
@@ -1001,6 +1163,21 @@ a .social-icon {
     .favor {
         max-width: 700px;
     }
+
+    /*Video*/
+
+    .tour-video-title {
+        justify-content: center;
+    }
+
+    .promo-video iframe {
+        min-width: 670px;
+        max-height: 347px;
+    }
+
+    .tour-info {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 720px) {
@@ -1012,14 +1189,25 @@ a .social-icon {
         min-width: 45%;
     }
 
+    .tour-video-title {
+        justify-content: center;
+    }
+
+    .promo-video iframe {
+        min-width: 570px;
+        max-height: 320px;
+    }
 }
 
 @media (max-width: 620px) {
     .city-images {
         display: none;
     }
-    .search-form {
+    header .search-form {
         align-items: center;
+    }
+    header .search-form-and-image {
+        justify-content: center;
     }
 
 }
@@ -1052,4 +1240,19 @@ a .social-icon {
         min-width: 400px;
         max-width: fit-content;
     }
+
+    /*Video*/
+
+    .promo-video iframe {
+        min-width: 490px;
+        max-height: 270px;
+    }
+
+    .tour-info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 562px) {
+
 }
